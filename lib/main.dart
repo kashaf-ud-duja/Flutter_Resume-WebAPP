@@ -1,3 +1,4 @@
+import 'package:cv/Views/homepage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,20 +12,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: "Kashaf's Resume",
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home:  MyHomePage(title: 'Flutter Demo Home Page'),
+      debugShowCheckedModeBanner: false,
     );
-  }
-}
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key, required String title});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
   }
 }
