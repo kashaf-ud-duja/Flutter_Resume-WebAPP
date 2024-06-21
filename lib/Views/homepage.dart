@@ -4,8 +4,18 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return  Scaffold(
       backgroundColor: Colors.amberAccent,
+      body: Container(
+        padding: EdgeInsets.symmetric(horizontal: 250,vertical: 30),
+        child: Column(children: [
+          Row(
+            children: [
+              
+            ],
+          )
+        ],),
+      )
     );
   }
 }
