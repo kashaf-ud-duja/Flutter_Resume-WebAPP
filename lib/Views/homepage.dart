@@ -1,3 +1,4 @@
+import 'package:cv/Widgets/Icons/padded_icons.dart';
 import 'package:cv/Widgets/gradient_button_container.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -27,39 +28,33 @@ class MyHomePage extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.all(10.0),
-                        child: Icon(
-                          FontAwesomeIcons.facebookF,
-                          color: Colors.blue[900],
-                        ),
+                      
+                      PaddedIcons(
+                        clr: const Color.fromRGBO(13, 71, 161, 1),
+                        ficon: FontAwesomeIcons.facebookF,
+                        padding: null, iconsize: null,
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(10.0),
-                        child: Icon(
-                          FontAwesomeIcons.instagram,
-                          color: Colors.pink,
-                        ),
+                      PaddedIcons(
+                        clr: Colors.pink,
+                        ficon: FontAwesomeIcons.instagram,
+                        padding: null, iconsize: null,
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(10.0),
-                        child: Icon(
-                          FontAwesomeIcons.linkedin,
-                          color: Colors.blue,
-                        ),
+                      PaddedIcons(
+                        clr: const Color.fromRGBO(25, 118, 210, 1),
+                        ficon: FontAwesomeIcons.linkedin,
+                        padding: null, iconsize: null,
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(10.0),
-                        child: Icon(FontAwesomeIcons.github),
+                      PaddedIcons(
+                        clr: Colors.black,
+                        ficon: FontAwesomeIcons.github,
+                        padding: null, iconsize: null,
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(10.0),
-                        child: Icon(
-                          Icons.mail,
-                          color: Color(0XFF1A9CE2),
-                          size: 30,
-                        ),
+                     PaddedIcons(
+                        clr: const Color.fromRGBO(97, 97, 97, 1),
+                        ficon:Icons.mail, 
+                        padding: null, iconsize: 26,
                       ),
+                     
                       SizedBox(
                         width: 20,
                       ),
@@ -68,7 +63,7 @@ class MyHomePage extends StatelessWidget {
                         Title: 'Download Resume',
                         clr: [
                           Color(0xFF00203F),
-                           const Color.fromRGBO(13, 71, 161, 1)
+                          const Color.fromRGBO(26, 35, 126, 1)
                         ],
                         isgradientvertical: true,
                         onpressed: () {},
