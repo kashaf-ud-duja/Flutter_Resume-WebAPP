@@ -59,7 +59,7 @@ class MyHomePage extends StatelessWidget {
                         width: 20,
                       ),
                       GradientButtonContainer(
-                        Overlayclr: Colors.teal,
+                        Overlayclr: const Color.fromRGBO(13, 71, 161, 1),
                         Title: 'Download Resume',
                         clr: [
                           Color(0xFF00203F),

@@ -27,7 +27,7 @@ class GradientButtonContainer extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(10.0),
         child: Card(
-          elevation: 10,
+          elevation: 20,
           child: Container(
             decoration: BoxDecoration(
               gradient: LinearGradient(
@@ -39,24 +39,22 @@ class GradientButtonContainer extends StatelessWidget {
                     : Alignment.centerRight,
                 colors: clr,
               ),
-              // borderRadius: BorderRadius.all(
-              //   Radius.circular(5),
-              // ),
+              borderRadius: BorderRadius.all(
+                Radius.circular(5),
+              ),
             ),
             child: ElevatedButton(
               style: ButtonStyle(
                   elevation: WidgetStateProperty.all<double>(0),
-                  //overlay color is the color that will dispalyed pnce hover on the button.
+                  //overlay color is the color that will dispalyed once hover on the button.
 
                   overlayColor: WidgetStateProperty.all<Color>(Overlayclr),
                   padding: WidgetStateProperty.all<EdgeInsetsGeometry>(
-                      const EdgeInsets.all(10)),
+                      const EdgeInsets.all(0)),
                   backgroundColor:
                       WidgetStateProperty.all<Color>(Colors.transparent)),
               onPressed: onpressed,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
+              child:
                   Text(
                     Title,
                     style: GoogleFonts.poppins(
@@ -64,8 +62,6 @@ class GradientButtonContainer extends StatelessWidget {
                         fontWeight: FontWeight.w600,
                         color: Colors.white),
                   ),
-                ],
-              ),
             ),
           ),
         ),
