@@ -1,5 +1,5 @@
 import 'package:cv/Widgets/Icons/padded_icons.dart';
-import 'package:cv/Widgets/gradient_button_container.dart';
+import 'package:cv/Widgets/Buttons/gradient_button_container.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
