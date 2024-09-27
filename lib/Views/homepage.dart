@@ -1,3 +1,4 @@
+import 'package:cv/Widgets/Cursor/animated_circle_cursor.dart';
 import 'package:cv/Widgets/Icons/padded_icons.dart';
 import 'package:cv/Widgets/Buttons/gradient_button_container.dart';
 import 'package:flutter/material.dart';
@@ -9,7 +10,7 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.amberAccent,
+        backgroundColor: Colors.lightBlue[50],
         body: Container(
           padding: EdgeInsets.symmetric(horizontal: 250, vertical: 30),
           child: Column(
@@ -17,23 +18,25 @@ class MyHomePage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(
-                    height: 80,
-                    width: 80,
-                    child: Image.asset(
-                      "assets/images/4.png",
-                      fit: BoxFit.cover,
-                      filterQuality: FilterQuality.high,
+                  AnimatedCircleCursorMouseRegion(
+                    child: Container(
+                      height: 80,
+                      width: 80,
+                      child: Image.asset(
+                        "assets/images/4.png",
+                        fit: BoxFit.cover,
+                        filterQuality: FilterQuality.high,
+                      ),
                     ),
                   ),
                   Row(
                     children: [
-                      
                       PaddedIcons(
-                        clr: const Color.fromRGBO(13, 71, 161, 1),
-                        ficon: FontAwesomeIcons.facebookF,
-                        padding: null, iconsize: null,
-                      ),
+                          clr: const Color.fromRGBO(13, 71, 161, 1),
+                          ficon: FontAwesomeIcons.facebookF,
+                          padding: null, iconsize: null,
+                        ),
+                  
                       PaddedIcons(
                         clr: Colors.pink,
                         ficon: FontAwesomeIcons.instagram,
