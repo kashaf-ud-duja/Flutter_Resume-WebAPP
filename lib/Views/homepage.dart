@@ -32,32 +32,35 @@ class MyHomePage extends StatelessWidget {
                   Row(
                     children: [
                       PaddedIcons(
-                          clr: const Color.fromRGBO(13, 71, 161, 1),
-                          ficon: FontAwesomeIcons.facebookF,
-                          padding: null, iconsize: null,
-                        ),
-                  
+                        clr: const Color.fromRGBO(13, 71, 161, 1),
+                        ficon: FontAwesomeIcons.facebookF,
+                        padding: null,
+                        iconsize: null,
+                      ),
                       PaddedIcons(
                         clr: Colors.pink,
                         ficon: FontAwesomeIcons.instagram,
-                        padding: null, iconsize: null,
+                        padding: null,
+                        iconsize: null,
                       ),
                       PaddedIcons(
                         clr: const Color.fromRGBO(25, 118, 210, 1),
                         ficon: FontAwesomeIcons.linkedin,
-                        padding: null, iconsize: null,
+                        padding: null,
+                        iconsize: null,
                       ),
                       PaddedIcons(
                         clr: Colors.black,
                         ficon: FontAwesomeIcons.github,
-                        padding: null, iconsize: null,
+                        padding: null,
+                        iconsize: null,
                       ),
-                     PaddedIcons(
+                      PaddedIcons(
                         clr: const Color.fromRGBO(97, 97, 97, 1),
-                        ficon:Icons.mail, 
-                        padding: null, iconsize: 26,
+                        ficon: Icons.mail,
+                        padding: null,
+                        iconsize: 26,
                       ),
-                     
                       SizedBox(
                         width: 20,
                       ),
@@ -75,6 +78,26 @@ class MyHomePage extends StatelessWidget {
                       )
                     ],
                   ),
+                ],
+              ),
+              const SizedBox(
+                height: 60,
+              ),
+              Row(
+                children: [
+                  Expanded(flex: 2,
+                      child: Container(
+                        height: 500,
+                    color: Colors.deepOrange,
+                    child: Column(children: [
+                      
+                    ],),
+                  )),
+                  Expanded(flex: 1,
+                      child: Container(
+                        height: 500,
+                    color: Colors.black,
+                  )),
                 ],
               )
             ],
